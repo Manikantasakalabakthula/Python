@@ -1,0 +1,5 @@
+print("hello World!")
+input("what is your name: ")
+print("Hey"+" "+input("what is your name: ")+","+" "+"how are you?")
+int(input("Enter your age: "))
+float(input("Enter your height: "))

@@ -1,0 +1,7 @@
+print("Hello World!")
+print("Age", 20)
+print("Name", "Manikanta \nage",20, sep="-")
+print("Hello World", end="!")
+print("\nHello Manikanta \tI am learning python \n")
+print("Hello"+" "+"Manikanta")
+print('String Manipulation Execute \nString Concatenation is done with "+" sign \ne.g print("Hello" + "Manikanta") \nNew lines can be created with a backslash and n)')

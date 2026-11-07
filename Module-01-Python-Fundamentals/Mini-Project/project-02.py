@@ -1,0 +1,8 @@
+product_name=input("Enter product name: ")
+product_price=int(input("Enter product price: "))
+quantity=int(input("Enter quantity: "))
+print("===== Bill =====")
+print("Product: ", product_name)
+print("Price: ", product_price)
+print("Quantity: ", quantity)
+print("Total: ", product_price*quantity)
