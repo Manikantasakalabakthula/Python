@@ -1,222 +1,155 @@
-# Module 1 — Python Fundamentals
+# Module - 1 (Python Fundamentals)
 
-## Topic 1: Introduction to Python
+## Introduction to python
 
-### Python
+### Python:-
+- Python is a high-level, interpreted, general-purpose programming language.
+- It is created by Guido van Rossum and created in 1989.
+- It is released to the public on 1991 with the version of 0.9.0.
+- It emphasizes code readability and simplicity using indentation to define code blocks.
 
-- Python is a **high-level, interpreted, general-purpose programming language**.
-- It was created by **Guido van Rossum** and created in **1989**.
-- It was released to the public in **1991** with version **0.9.0**.
-- It emphasizes **code readability and simplicity** using indentation to define code blocks.
+### Why python:-
+- It's easy to learn and read.
+- It's free to use and open-source.
+- Millions of developers and libraries available.
 
-### Why Python?
-
-- It is easy to learn and read.
-- It is free to use and open-source.
-- Millions of developers and libraries are available.
-
-### Features of Python
-
-- Python has simple syntax.
-- It runs anywhere with the same code.
+### Features of python:-
+- python have simple syntax.
+- It runs anywhere with same code.
 - It manages memory and variables automatically.
 
-### Applications of Python
-
+### Application of python:-
 - Data Science & Analytics
 - Artificial Intelligence & Machine Learning
-- Software and Web Development
+- Software and Web development.
 - Automation & Testing
 
-### Limitations of Python
-
+### Limitation of python:-
 - Executes code line-by-line, so the speed is slow.
-- Rarely used for building mobile apps.
+- Rarely used for building Mobile APPS.
 - Consumes more RAM due to automatic data tracking.
 
-### Python Interpreter
-
-- A built-in software program that runs Python code.
+### Python Interpreter:-
+- A built-in Software program the runs python code.
 - It executes the code line-by-line.
 
 ---
 
-# Topic 2: Python Basic Syntax
+## python Basic syntax
 
-## Python Syntax
-
+### Python syntax:-
 ```python
 a = 10
 print(a)
 ```
 
-### Indentation
+### Indentation:-
+- python uses 4 empty spaces at the start of a line.
+- If wrong Indentation occurs in the code that shows error called "Indentation error."
 
-- Python uses **4 empty spaces** at the start of a line.
-- If wrong indentation occurs in the code, it shows an error called **IndentationError**.
+### Comments:-
+- use a `#` symbol to write single-line comments.
+- use a `""" """` symbols to write multi-line comments.
 
-### Comments
-
-- Use the `#` symbol to write single-line comments.
-- Triple quotes can be used to write multi-line comments/docstrings.
-
-#### Example
-
+- Eg:-
 ```python
-# Single-line comment
-```
+# single-line comment
 
-```python
 """
-This is a multi-line comment
+This is Multi-line comment
 """
 ```
 
-### Case Sensitivity
-
-- Small and capital letters are treated as completely different things.
-
-For example:
-
-```python
-name = "Manikanta"
-Name = "Adithya"
-```
-
-Here, `name` and `Name` are different identifiers.
+### Case sensitivity:-
+- small and capital letters are treated as completely different things.
 
 ---
 
-# Topic 3: Output — `print()`
+## output - print()
 
-## `print()` Function
+### Print() function:-
+- It display text, numbers and multiple data.
+- Put your data in round braces and separate multiple values with commas.
 
-- It displays text, numbers, and multiple data.
-- Put your data inside parentheses and separate multiple values with commas.
-
-### Syntax
-
-```python
-print(value)
-```
-
-### Example
-
+- Syntax:
 ```python
 print("Age", 20)
+print(Value)
 ```
 
-### Output
-
-```text
-Age 20
+- example:
+```python
+print("Age", 20)
+# Output - Age 20
 ```
 
-### Common Mistake
+### sep Parameter:-
+- A character placed between multiple printed items.
 
-- Forgetting to write commas when printing multiple values.
-
----
-
-## `sep` Parameter
-
-- `sep` is a character placed between multiple printed items.
-
-### Syntax
-
+- Syntax:
 ```python
 print(value1, value2, sep="character")
 ```
 
-### Example
-
+- eg:-
 ```python
 print("Apple", "Banana", sep=",")
+# output: Apple, Banana
 ```
 
-### Output
+### end Parameter:-
+- the character prints at the very end of the line instead of jumping to new line.
 
-```text
-Apple,Banana
-```
-
-### Common Mistake
-
-- Putting `sep` at the start instead of using it as a keyword argument.
-
----
-
-## `end` Parameter
-
-- The `end` parameter specifies what is printed at the very end of the line instead of moving to a new line.
-
-### Syntax
-
+- syntax:
 ```python
 print(value, end="character")
 ```
 
-### Example
-
+- eg:
 ```python
 print("Hello World", end="!")
+# output - Hello World!
 ```
 
-### Output
+### Escape sequence :- (\n and \t)
+- Special code combination used inside text quotes to add new line or wide tab spaces.
 
-```text
-Hello World!
-```
-
----
-
-## Escape Sequence — `\n` and `\t`
-
-- Escape sequences are special code combinations used inside text quotes.
-- They can be used to add a **new line** or **wide tab spaces**.
-
-### Syntax
-
+- syntax:
 ```python
-"\n"
-"\t"
+"text\ntext"  # or
+"text\ttext"
 ```
 
-### Example
-
+- eg:
 ```python
-print("Line1\nLine2")
+print("Line 1\nLine 2")
 print("Item:\tApple")
 ```
 
-### Output
-
+- output:
 ```text
-Line1
-Line2
-Item:   Apple
+Line 1
+Line 2
+Item:    Apple
 ```
 
 ---
 
-# Topic 4: Input — `input()`
+## Input - input()
 
-## `input()` Function
+### Input() function:
+- A way to ask the input for user and save the text inside a variable.
+- input() always stores user input as a string if it is a number also.
+- For type conversion with input(): we can use int(input()) or float(input()) to perform math operations.
 
-- `input()` is a way to ask the user for input and save the text inside a variable.
-- `input()` always stores the user's input as a **string**, even if the user enters a number.
-- For type conversion with `input()`, we can use `int(input())` or `float(input())` to perform mathematical operations.
-
-### Syntax
-
+- syntax:
 ```python
-variable_name = input("prompt")
-variable = int(input())
-variable = float(input())
+variable_name = input("Prompt")
+variable = int(input())  # or
+variable2 = float(input())
 ```
 
-### Example
-
+- Eg:
 ```python
 name = input("Enter your name: ")
 print(name)
@@ -225,41 +158,30 @@ age = int(input("Enter your age: "))
 print(age)
 ```
 
-### Example Output
-
+- output:
 ```text
 Enter your name: Manikanta
-Enter your age: 20
-20
+Enter your age: 
 ```
 
 ---
 
-# Topic 5: Variables & Identifiers
+## Variables & Identifiers
 
-## Variables
+### Variables:-
+- Variables are named containers to store the values.
+- stored values can be include data types such as numbers, strings, or lists.
+- The values are changeable to the same variable name and overwrites the previous value.
+- we can assign multiple values to multiple variables in single line.
 
-- Variables are named containers used to store values.
-- Stored values can include data types such as numbers, strings, or lists.
-- The values can be changed using the same variable name, which overwrites the previous value.
-- We can assign multiple values to multiple variables in a single line.
-
-### Syntax
-
+- syntax:
 ```python
 variable_name = value
-```
-
-```python
-x, y = value1, value2
-```
-
-```python
+x, y = value, value
 a = b = c = value
 ```
 
-### Examples
-
+- eg:
 ```python
 name = "Manikanta"
 print(name)
@@ -270,101 +192,61 @@ print(name)
 x, y = 5, 10
 
 a = b = c = 10
-
 print(x, y, a, b, c)
 ```
 
-### Output
-
+- output:
 ```text
 Manikanta
 Adithya
-5 10 10 10 10
+5, 10, 10, 10, 10
 ```
 
----
+### Variable Naming Rules & Identifiers:-
+- Variable should be meaningful name
+- Must be starts with either letter or underscore
+- Variable name can contain alpha-numerical characters and underscore only.
+- no other characters like special symbols and spaces are not allowed.
+- variable names are case-sensitive
+- variable names should not be reserved words.
+- can not start with numbers.
 
-## Variable Naming Rules & Identifiers
-
-- Variable names should be meaningful.
-- A variable name must start with either a **letter** or an **underscore**.
-- Variable names can contain **alphanumeric characters** and underscores only.
-- Special symbols and spaces are not allowed.
-- Variable names are **case-sensitive**.
-- Variable names should not be reserved words/keywords.
-- Variable names cannot start with numbers.
-
-### Examples
-
+- Eg:-
 ```text
-name
-age
-_age
-id
-id1
-roll_no
-RollNo
+name, age, _age, id, id_1, roll_no, Roll_no
 ```
+
+### Multi-Word variable names:-
+- camel case:- each word except the first letter starts with capital letter
+  - eg:- `myVariableName`
+- Pascal case:- each word starts with a capital letter.
+  - eg:- `MyVariableName`
+- Snake case:- each word is separated by underscore
+  - eg:- `my_variable_name`
 
 ---
 
-## Multi-Word Variable Names
+## Python keywords
 
-### 1. Camel Case
+### Python keywords:-
+- Python keywords are pre-defined, reserved words that have a fixed, special meaning to the interpreter.
+- You can not use them as regular variable names, and they form the structural building blocks of python code.
 
-- Each word except the first word starts with a capital letter.
-
-Example:
-
+- syntax:
 ```python
-myVariableName
+import keyword
+keyword.kwlist
 ```
 
-### 2. Pascal Case
-
-- Each word starts with a capital letter.
-
-Example:
-
-```python
-MyVariableName
-```
-
-### 3. Snake Case
-
-- Each word is separated by an underscore.
-
-Example:
-
-```python
-my_variable_name
-```
-
----
-
-# Topic 6: Python Keywords
-
-## Python Keywords
-
-- Python keywords are **pre-defined, reserved words** that have a fixed and special meaning to the interpreter.
-- You cannot use them as regular variable names.
-- They form the structural building blocks of Python code.
-
-### Checking Python Keywords
-
-The `keyword` module can be used to check whether a word is a Python keyword.
-
-### Example
-
+- eg:-
 ```python
 import keyword
 
-print("Is 'if' a keyword?:", keyword.iskeyword("if"))
-print("Is 'apple' a keyword?:", keyword.iskeyword("apple"))
+print("Is 'if' a keyword?: ", keyword.iskeyword("if"))
+print("Is 'apple' a keyword?: ", keyword.iskeyword("apple"))
 ```
 
-### Output
-
+- output:
 ```text
 Is 'if' a keyword?: True
 Is 'apple' a keyword?: False
@@ -372,341 +254,106 @@ Is 'apple' a keyword?: False
 
 ---
 
-# Topic 7: Python Data Types
+## Python Data types
 
-## Data Types
+### Data types:-
+- It tells type of value/data.
+- Data types are actually classes in python and variables are object of their classes.
+- In python user does not need to specify the type of variable while executing the code because python will figure it out.
+- Python have multiple data types.
+- They are :-
+  1) Numeric type - int, float, complex
+  2) String
+  3) Sequence type - list, tuple, range, dictionary, Boolean, set
 
-- Data types tell the type of a value/data.
-- Data types are actually **classes in Python**, and variables are objects of their classes.
-- In Python, the user does not need to specify the type of a variable while executing the code because Python determines it automatically.
-- Python has multiple data types.
+#### - int:-
+- It contains whole numbers (+ve or -ve)
+- There is no limit to how long an integer value.
 
-### Common Python Data Types
-
-1. **Numeric types**
-   - `int`
-   - `float`
-   - `complex`
-
-2. **String**
-   - `str`
-
-3. **Sequence types**
-   - `list`
-   - `tuple`
-   - `range`
-
-4. **Mapping type**
-   - `dict`
-
-5. **Boolean type**
-   - `bool`
-
-6. **Set type**
-   - `set`
-
----
-
-## Integer — `int`
-
-- `int` contains whole numbers, either positive or negative.
-- There is no fixed limit to how long an integer value can be, subject to available memory.
-
-### Example
-
+- Eg:-
 ```python
 a = 123
 print(a)
 
-a = 123456789101213
+a = 12345678910111213
 print(a)
 ```
 
----
-
-## Integer Prefixes
-
-With specific prefixes, numbers can be represented in different bases.
-
-### Binary — Base 2
-
-Prefix:
-
-```text
-0b
-```
-
-Example:
+- Imp - With any prefix the given numbers would considered as decimal numbers
+  - For eg:
+    - `0b` or `0B` => Binary (Base 2)
+    - `0o` or `0O` => Octal (Base 8)
+    - `0x` or `0X` => Hexa (Base 16)
 
 ```python
-0b11
+print(0b11)   # => 3
+print(0o11)   # => 9
+print(0x11)   # => 17
+
+print(0b123)  # => Invalid binary
+print(0o123)  # => 83
+print(0x123)  # => 291
 ```
 
-Output:
+- If you want check the type of the variable use `type()`.
 
-```text
-3
-```
+#### Float:-
+- They are decimal numbers.
 
-### Octal — Base 8
-
-Prefix:
-
-```text
-0o
-```
-
-Example:
-
-```python
-0o11
-```
-
-Output:
-
-```text
-9
-```
-
-### Hexadecimal — Base 16
-
-Prefix:
-
-```text
-0x
-```
-
-Example:
-
-```python
-0x11
-```
-
-Output:
-
-```text
-17
-```
-
-### Examples
-
-```python
-print(0b11)    # 3
-print(0o11)    # 9
-print(0x11)    # 17
-```
-
-> Note: A prefix determines the number's base. For example, `0b123` is invalid because binary digits can only be `0` and `1`.
-
-### Checking the Type
-
-Use `type()` to check the type of a variable.
-
-```python
-a = 10
-print(type(a))
-```
-
----
-
-## Float — `float`
-
-- Float values represent decimal numbers.
-
-### Examples
-
+- For eg:
 ```python
 b = 5.523
-print(b)
+print(b)  # => 5.523
 
 b = 18.2546892034
-print(b)
+print(b)  # => 18.2546892034
 ```
+
+#### Strings:-
+- Strings are sequence of characters.
+- They are enclosed by `""` Double or `''` single quotes.
+- For eg:- `"Manikanta"` or `'Manikanta'`
+- use `string[]` will print the character of the index value of string.
+
+- For eg:-
+```python
+print("Manikanta")       # => Manikanta
+print("Manikanta"[3])    # => i
+```
+
+#### Boolean:-
+- It have 2 possible value either true or false.
+- It is usefull for decision making
+- Make sure T & F are capital while using True & False values otherwise you will get errors.
 
 ---
 
-## String — `str`
+## Type conversion/casting
 
-- Strings are sequences of characters.
-- They are enclosed by **double quotes** or **single quotes**.
+### Type conversion/casting :
+- changing a value from one data type to other to avoid errors during actions like mixing numbers and text.
+- It can happen automatically by python or manually by built-in functions.
+- This lets you to combine strings, integers, numbers and floats without crashing your code.
+- There are two types:
+  - Implicit: python automatically convert one data type to another without using built-in function
+  - Explicit: Manually force a variable to convert one data type to another
+- If we convert the text to integer or float it shows value error bcoz text can't convert into integers & float
 
-### Examples
-
+- Eg:-
 ```python
-name = "Manikanta"
-name = 'Manikanta'
-```
-
-### String Indexing
-
-- Indexing is used to access a character at a particular index of a string.
-- String indexing starts from `0`.
-
-### Example
-
-```python
-print("Manikanta")
-print("Manikanta"[3])
-```
-
-Output:
-
-```text
-Manikanta
-i
-```
-
----
-
-## Boolean — `bool`
-
-- Boolean has two possible values:
-  - `True`
-  - `False`
-- It is useful for decision-making.
-- `True` and `False` must start with capital letters.
-
-### Example
-
-```python
-a = True
-b = False
-
-print(a)
-print(b)
-```
-
----
-
-# Topic 8: Type Conversion / Casting
-
-## Type Conversion / Type Casting
-
-- Type conversion means changing a value from one data type to another.
-- It is useful to avoid errors when working with different data types, such as numbers and text.
-- Python supports both **implicit** and **explicit** type conversion.
-
-### Two Types
-
-1. **Implicit Type Conversion**
-2. **Explicit Type Conversion**
-
----
-
-## Implicit Type Conversion
-
-- Python automatically converts one data type to another compatible data type without the programmer explicitly calling a conversion function.
-- This generally happens when converting a value to a type that can safely represent it, such as `int` to `float`.
-
-### Example
-
-```python
-a = 10
-b = 10.5
-
-result = a + b
-print(result)
-```
-
-### Output
-
-```text
-20.5
-```
-
-Here, Python automatically converts the integer `10` to a float during the operation.
-
----
-
-## Explicit Type Conversion
-
-- The programmer manually converts one data type into another using built-in functions.
-
-Common conversion functions:
-
-```python
-int()
-float()
-str()
-bool()
-```
-
-### Example 1 — String to Integer
-
-```python
+# Implicit:
 a = "10"
+print(10 + int(a))       # => 20
 
-print(10 + int(a))
-```
-
-### Output
-
-```text
-20
-```
-
-### Example 2 — String to Float
-
-```python
 b = "10.5"
+print(10 + float(b))     # => 20.5
 
-print(10 + float(b))
-```
-
-### Output
-
-```text
-20.5
-```
-
-### Example 3 — String to Integer
-
-```python
+# Explicit:
 c = "123"
-
 new_c = int(c)
+print(10 + new_c)        # => 133
 
-print(10 + new_c)
-```
-
-### Output
-
-```text
-133
-```
-
-### Invalid Conversion
-
-If a string does not contain a valid numeric value, converting it to `int` or `float` can cause a `ValueError`.
-
-For example:
-
-```python
+# ValueError:
 d = "Manikanta"
-
-print(int(d))
+print(int(d))            # => ValueError
 ```
-
-This produces a `ValueError` because `"Manikanta"` cannot be converted into an integer.
-
----
-
-# Quick Revision
-
-| Topic | Important Points |
-|---|---|
-| Python | High-level, interpreted, general-purpose language |
-| Syntax | Python uses indentation |
-| Comments | `#` for single-line comments |
-| Output | `print()` |
-| Input | `input()` |
-| Variables | Store values |
-| Identifiers | Names given to variables, functions, etc. |
-| Keywords | Reserved words with special meaning |
-| Integer | `int` |
-| Decimal | `float` |
-| Text | `str` |
-| Boolean | `bool` |
-| Type Conversion | Changing one data type into another |
-| Implicit Conversion | Done automatically by Python |
-| Explicit Conversion | Done manually using functions such as `int()` and `float()` |
