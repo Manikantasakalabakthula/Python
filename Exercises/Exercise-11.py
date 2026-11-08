@@ -1,0 +1,6 @@
+age=int(input("Enter your age: "))
+percentage=int(input("Enter your percentage: "))
+print("Age >= 18:", age>=18)
+print("Percentage >= 60: ", percentage>=60)
+print("Eligible: ", age>=18 and percentage>=60)
+print("Not eligible: ", age<18 or percentage<60)
