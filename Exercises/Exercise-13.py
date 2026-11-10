@@ -1,3 +1,12 @@
+"""
+Exercise 13 — Operator Precedence Challenge
+Write a program that evaluates this expression:
+result = 10 + 5 * 2 ** 2 - 8 // 3
+
+
+Print result.
+"""
+
 result = 10 + 5 * 2 ** 2 - 8 // 3 # 28
 print(result)
 update_result=10 + 5 * (2 ** 2) - 8 // 3 #28

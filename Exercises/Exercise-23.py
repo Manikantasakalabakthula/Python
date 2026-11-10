@@ -1,24 +1,29 @@
 """
-Exercise 23 — Number Analyzer
-Take an integer from the user and print:
-- "Positive" if number > 0
-- "Negative" if number < 0
-- "Zero" if number == 0
-Then additionally print whether the number is Even or Odd.
+Exercise 23 — Student Result
+Take:
+student_name
+marks
 
-Use: if-elif-else and %.
+Then:
+- Calculate marks + 5
+- Round the result to 2 decimal places
+- Use an f-string to display the student's name and updated marks.
+- If the updated marks are 60 or above, print "Eligible"
+- Otherwise print "Not Eligible"
+
+Example format:
+Mani scored 85.0 after bonus
+Eligible
+
+Use: round(), f-string, if-else.
 """
 
-num=int(input("Enter an integer: "))
-if num>0:
-    if num%2==0:
-        print("Positive and Even")
-    else:
-        print("Positive and Odd")
-elif num<0:
-    if num%2==0:
-        print("Negative and Even")
-    else:
-        print("Negative and Odd")
+student_name=input("Enter student name: ")
+marks=float(input("Enter student marks: "))
+marks+=5
+result=round(marks,2)
+print(f"{student_name} scored {result} after bonus")
+if result>=60:
+    print("Eligible")
 else:
-    print("Zero")
+    print("Not Eligible")

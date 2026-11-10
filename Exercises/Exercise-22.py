@@ -1,20 +1,24 @@
 """
-Exercise 22 — Login Checker
-Write a program that takes:
-username
-password
+Exercise 22 — Number Analyzer
+Take an integer from the user and print:
+- "Positive" if number > 0
+- "Negative" if number < 0
+- "Zero" if number == 0
+Then additionally print whether the number is Even or Odd.
 
-Rules:
-- username must be "admin"
-- password must be "python123"
-- If both are correct → "Login Successful"
-- Otherwise → "Invalid Credentials"
-Use: if-else + and
+Use: if-elif-else and %.
 """
 
-username=input("Enter your usename: ")
-password=input("Enter your password: ")
-if username=="admin" and password=="python123":
-    print("Login Successful")
+num=int(input("Enter an integer: "))
+if num>0:
+    if num%2==0:
+        print("Positive and Even")
+    else:
+        print("Positive and Odd")
+elif num<0:
+    if num%2==0:
+        print("Negative and Even")
+    else:
+        print("Negative and Odd")
 else:
-    print("Invalid Credentials")
+    print("Zero")

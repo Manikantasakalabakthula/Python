@@ -1,5 +1,5 @@
 """
-Create a program that evaluates these expressions:
+Mini Project 3 - Create a program that evaluates these expressions:
 a = 10b = 5c = 2
 
 
